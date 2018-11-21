@@ -35,7 +35,7 @@ gulp.task('styles', function() {
 
 gulp.task('js', function() {
 	return gulp.src([
-		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/jquery/jquery.min.js',
 		'app/libs/imagesloaded/imagesloaded.pkgd.min.js',
 		'app/libs/imagefill/jquery-imagefill.js',
 		'app/libs/OwlCarousel/owl.carousel.min.js',
