@@ -39,6 +39,7 @@ gulp.task('js', function() {
 		'app/libs/imagesloaded/imagesloaded.pkgd.min.js',
 		'app/libs/imagefill/jquery-imagefill.js',
 		'app/libs/OwlCarousel/owl.carousel.min.js',
+        //'app/libs/cssmenu/script.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
