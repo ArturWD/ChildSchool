@@ -1,0 +1,60 @@
+.section-services
+	background: linear-gradient(to bottom right, rgba($maingreen, .02), rgba($yellow, .08))
+	.service-container
+		display: flex
+		padding: 30px 0
+
+	.service-container.right
+		justify-content: flex-end
+	
+	.service
+		overflow: hidden
+		border-radius: 7px
+		max-width: 800px
+		box-shadow: 5px 10px 25px rgba($maingreen, 0.4)
+
+	.service-header
+		display: block
+		width: 100%
+		padding: 15px 25px
+		background-color: $lightgreen
+	
+	.service-content
+		display: flex
+	.service-description
+		flex: 1
+		flex-basis: 300px
+		margin-right: 20px
+		padding: 20px 15px
+	.service-img
+		flex: 9999
+
+	.service-button
+		margin-top: 20px
+		display: inline-block
+		background-color: $maingreen
+		border: none
+		transition: all 200ms ease-in-out
+		&:hover
+			background-color: darken($maingreen, 3)
+			color: lighten($yellow, 20)
+
+@media (max-width: 1000px)
+	.section-services
+		.service-container
+			justify-content: center
+		.service-container.right
+			justify-content: center
+
+@media (max-width: 640px)
+	.section-services
+		.service-img
+			display: none
+		.service-description
+			margin-right: 0
+			display: flex
+			flex-direction: column
+		.service
+			box-shadow: 0px 10px 25px rgba($maingreen, 0.4)
+		.service-button
+			align-self: center

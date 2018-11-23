@@ -27,10 +27,13 @@
 	top: calc(100% + 0px) 
 	left: 50%
 	transform: translateX(-50%)
-	padding: 10px 20px
-	
+	padding: 10px 0px
+
 .drop-down-menu-item
 	padding: 5px 0
+	width: 100%
+.drop-down-menu-item a
+	color: darken($maingreen, 20)
 
 .navigation--logo
 	margin-right: 20px
@@ -87,12 +90,11 @@
 
 
 @media (min-width: 900px)
-	.menu--item:hover .drop-down-menu
-		display: block
-		background-color: $lightgreen
-
 	.drop-down-menu
+		background-color: $lightgreen
 		border-radius: 0 0 5px 5px
+		&-item:hover
+			background-color: darken($lightgreen, 5)
 
 	.menu--item .menu-item-link
 		padding: 10px 15px

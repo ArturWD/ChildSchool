@@ -1,0 +1,32 @@
+.section-call
+	padding-bottom: 100px
+	background-color: rgba($lightyellow, .4)
+	text-align: center
+
+	.form
+		display: block
+		padding: 20px 0 
+		margin: 0 auto
+	.input-group
+		display: flex
+		justify-content: center
+	.form-control
+		padding: 10px 15px
+		cursor: text
+		border-color: $maingreen
+	button.form-control
+		cursor: pointer
+		background-color: $maingreen
+		transition: all 200ms ease-in-out
+		&:hover
+			background-color: darken($maingreen, 3)
+			color: lighten($yellow, 20)
+	
+	
+
+@media (max-width: 670px)
+	.section-call
+		.input-group
+			flex-direction: column
+		.form-control
+			margin-bottom: 15px

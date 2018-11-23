@@ -1,0 +1,62 @@
+.section-news
+	.container
+		display: flex
+		flex-direction: column
+	.news-block
+		display: flex
+		justify-content: space-around
+	.news
+		overflow: hidden
+		border-radius: 5px
+		width: 30%
+		display: flex
+		flex-direction: column
+		box-shadow: 0 5px 40px 0px rgba(black, .2)
+	.news-preview
+		height: 0
+		width: 100%
+		padding-top: 60%
+		margin-bottom: 30px
+	.news-title
+		padding: 0 15px
+	.news-text
+		margin-top: 10px
+		margin-bottom: 20px
+		padding: 0 15px
+	.news-more
+		margin-top: auto
+		text-align: center
+		background-color: $maingreen
+		border: none
+		transition: all 200ms ease-in-out
+		&:hover
+			background-color: darken($maingreen, 3)
+			color: lighten($yellow, 20)
+
+	.all-news
+		margin-top: 50px
+		background-color: $maingreen
+		transition: all 200ms ease-in-out
+		display: inline-block
+		border: none
+		align-self: center
+		&:hover
+			background-color: darken($maingreen, 3)
+			color: lighten($yellow, 20)
+
+@media (max-width: 1000px)
+	.section-news
+		.news
+			width: 45%
+		.news:last-child
+			display: none
+
+@media (max-width: 700px)
+	.section-news
+		.news-block
+			flex-direction: column
+		.news
+			width: 100%
+			margin-bottom: 30px
+		.news:last-child
+			display: block

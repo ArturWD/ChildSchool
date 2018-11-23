@@ -1,0 +1,27 @@
+.about-block
+	display: flex
+	max-width: 900px
+	margin: 0 auto
+.section-about
+	background: linear-gradient(to right, rgba(255, 255, 255, 0.83), #ffffff), url(../../img/about-bg.jpg)
+	background-position: 0 30px
+	background-size: cover
+	.about-img
+		flex-grow: 9999
+	.about-content
+		flex-basis: 350px
+		flex-grow: 1
+		margin-right: 30px
+
+@media (max-width: 700px)
+	.section-about
+		.about-block
+			flex-direction: column-reverse
+		.about-img
+			height: 200px
+			margin-bottom: 20px
+
+
+		.about-content
+			margin-right: 0px
+			flex-basis: 50px

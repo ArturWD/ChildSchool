@@ -1,0 +1,46 @@
+.footer
+	background-color: $maingreen
+	padding: 30px 0
+	color: darken($maingreen, 35)
+
+	.container
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	.column
+		flex: 1
+		flex-basis: 230px
+		padding-bottom: 30px
+
+	.social
+		display: flex
+		flex-direction: column
+	.contact
+		margin-bottom: 5px
+	.logo
+		width: 80px
+		margin-bottom: 20px
+	.social-networks
+		margin-top: 15px
+		
+		a
+			margin-right: 5px
+			display: inline-block
+			background-color: $yellow
+			border-radius: 50%
+			width: 25px
+			height: 25px
+			text-align: center
+			line-height: 25px
+			font-size: 12px
+			&:hover
+				background-color: darken($yellow, 10)
+
+	.main-navigation
+		li
+		a
+			display: inline-block
+			padding: 5px
+			color: lighten($yellow, 30)
+			&:hover
+				color: lighten($yellow, 0)
