@@ -6,8 +6,11 @@ $(function() {
 	$('.news-preview').imagefill();
 	
 	//MENU
+    
+    //menu breakpoint
+    var breakAt = 1000;
 	$(window).resize(function(){		
-		if( $(window).width() < 900 ){
+		if( $(window).width() < breakAt ){
 			
 			$('.navigation--menu').slideUp(0, function(){});
 			
@@ -16,19 +19,20 @@ $(function() {
 		else{
 			$('.navigation--menu').slideDown(0, function(){});
 			$('.drop-down-menu').slideUp(300, function(){});
-
+            $('.navigation-wrapper').removeClass('is-open');
 		}
 		
 	});
 	
 	$(window).scroll(function(){
-		if( $(window).width() > 900 ){
+		if( $(window).width() > breakAt ){
 			$('.drop-down-menu').slideUp(300, function(){});
 		}
 	});
 	
 	$(".navigation--hamburger").on('click', function(){
 		$('.navigation--menu').slideToggle(300, function(){});
+        $('.navigation-wrapper').toggleClass('is-open');
 		
 	});
 
@@ -38,10 +42,12 @@ $(function() {
 		
 	});
 	
-	if( $(window).width() < 900 ){
+	if( $(window).width() < breakAt ){
 		$('.navigation--menu').slideUp(0, function(){});
 	};
 	
+    
+    
 	//REVIEWS
 	$('.reviews-carousel').owlCarousel({
 		items:1,
@@ -57,6 +63,36 @@ $(function() {
 			}
 		}
 	});
+    
+    
+    //SMOOTH SCROLL
+    // Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          
+        });
+      }
+    }
+  });
 	
 });
 

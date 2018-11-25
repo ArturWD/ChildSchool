@@ -1,4 +1,5 @@
 .button
+    cursor: pointer
     display: block
     padding: 10px 20px
     text-transform: uppercase
@@ -6,7 +7,20 @@
     font-weight: bold
     border: 1px solid $yellow
     color: $yellow
+    transition: all 200ms ease-in-out
     &:hover
         color: $yellow
     &:focus
         color: $yellow
+    
+.button-white
+    background-color: $maingreen
+    color: white
+    border: none
+    transition: all 200ms ease-in-out
+    &:hover
+        color: lighten($yellow, 20)
+        background-color: darken($maingreen, 3)
+    &:focus
+        color: white
+    
