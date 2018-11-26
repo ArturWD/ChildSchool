@@ -38,6 +38,7 @@ gulp.task('js', function() {
 		'app/libs/jquery/jquery.min.js',
 		'app/libs/imagesloaded/imagesloaded.pkgd.min.js',
 		'app/libs/imagefill/jquery-imagefill.js',
+		'app/libs/popup/jquery.magnific-popup.min.js',
 		'app/libs/OwlCarousel/owl.carousel.min.js',
         //'app/libs/cssmenu/script.js',
 		'app/js/common.js', // Always at the end

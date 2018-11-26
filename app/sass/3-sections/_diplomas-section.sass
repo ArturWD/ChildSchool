@@ -1,0 +1,36 @@
+.section-diplomas
+	padding: 70px 0
+	.h-section-title
+		margin-bottom: 60px
+	.owl-item
+		display: flex
+		justify-content: center
+		align-items: center
+		height: 100%
+	.owl-prev, .owl-next
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		width: 20px
+
+		span
+			font-size: 60px
+			color: lighten($text-color, 10)
+			font-weight: 300
+		&.disabled
+			span
+				color: lighten($text-color, 40)
+	.owl-nav
+		top: 50%
+		width: 100%
+		
+	.diplomas-popup
+		cursor: zoom-in
+		
+	.owl-next
+		left: auto
+		right: 0
+	.diplomas-popup
+		img
+			height: auto
+			width: 130px
