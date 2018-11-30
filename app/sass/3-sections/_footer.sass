@@ -10,6 +10,7 @@
 	.column
 		flex: 1
 		flex-basis: 230px
+        padding-bottom: 150px
 
 	.social
 		display: flex
@@ -20,21 +21,22 @@
 	.logo
 		width: 80px
 		margin-bottom: 20px
+   
 	.social-networks
-		margin-top: 15px
-		
-		a
-			margin-right: 5px
-			display: inline-block
-			background-color: $yellow
-			border-radius: 50%
-			width: 25px
-			height: 25px
-			text-align: center
-			line-height: 25px
-			font-size: 12px
-			&:hover
-				background-color: darken($yellow, 10)
+        margin-right: 30px
+        a
+            text-align: center
+            margin-right: 10px
+            display: inline-block
+            background-color: transparent
+            border-radius: 50%
+            width: 30px
+            height: 30px
+            text-align: center
+            line-height: 30px
+            font-size: 22px
+            color: black
+        
 
 	.main-navigation
 		li
@@ -44,3 +46,14 @@
 			color: lighten($yellow, 30)
 			&:hover
 				color: lighten($yellow, 0)
+.footer .community
+    display: flex
+.footer .social-networks 
+    margin-top: 15px
+    h5
+        font-weight: 400
+        margin-bottom: 5px
+    a:hover  i
+        color: darken($yellow, 10)
+    i
+        color: white

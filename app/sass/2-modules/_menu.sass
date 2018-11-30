@@ -34,7 +34,8 @@ $breakeAt: 1000
 .menu--item
 	position: relative
 .menu--item .menu-item-link
-	font-size: 18px
+	font-size: 20px
+    font-weight: 300
 	transition: all 100ms ease-in
 .drop-down-item
 	cursor: pointer
@@ -75,7 +76,7 @@ $breakeAt: 1000
 	padding: 5px 0
 	width: 100%
 .drop-down-menu-item a
-	color: darken($maingreen, 20)
+	color: white
 
 .navigation--logo
 	margin-right: 20px
@@ -124,20 +125,21 @@ $breakeAt: 1000
     border-radius: 5px
 	padding: 5px 15px
 .menu-item-link
-	color: white
-	font-size: 18px
-	letter-spacing: 1px
-	&:hover
-		color: lighten($yellow, 20)
+    color: white
+    font-size: 18px
+
+    font-weight: 300
+    letter-spacing: 1px
+    &:hover
+        color: lighten($yellow, 20)
 
 
 
 @media (min-width: 1000px)
 	.drop-down-menu
-		background-color: $lightgreen
-		border-radius: 0 0 5px 5px
+		background-color: rgba($lightgreen, 0.15)
 		&-item:hover
-			background-color: darken($lightgreen, 5)
+			background-color: rgba($lightgreen, .2)
 
 	.menu--item .menu-item-link
 		padding: 10px 15px
@@ -148,7 +150,8 @@ $breakeAt: 1000
     .navigation--hamburger
         display: block
 
-        
+    .drop-down-menu-item a
+	    color: darken($maingreen, 20) 
     .drop-down-menu-item:hover a
         color: $yellow
 

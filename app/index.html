@@ -23,7 +23,9 @@
 	<!-- Custom Browsers Color End -->
 
 	<link rel="stylesheet" href="css/main.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300, 400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 </head>
 
@@ -56,7 +58,7 @@
                             <a href="#" class="button button-signin">Войти</a>
                         </li>
 					</ul>
-					<h3 class="menu-phone">(342) 294-07-90</h3>
+					<h3 class="menu-phone">+7 (342) 294-07-90</h3>
 					<div class="navigation--hamburger"><span></span></div>
 				</nav>
                
@@ -111,36 +113,32 @@
 	<section class="h-section section-services">
 		<div class="container">
 			<h2 class="h-section-title">Услуги</h2>
-			<div class="service-container right">
-				<div class="service">
-					<h3 class="service-header">Детский сад</h3>
-					<div class="service-content">
-						<div class="service-description">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti quo error dignissimos, amet maxime et iste odio, quis nam, reprehenderit accusantium illo optio deleniti voluptates sapiente perferendis iusto rem eos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus asperiores sit, tempora ut, cupiditate aspernatur quidem totam qui unde dignissimos ipsa iste architecto nam sapiente accusamus voluptatem perferendis sed nostrum.</p>
-							<a class="button button-white service-button" href="#">Узнать больше</a>
-						</div>
-						<div class="service-img">
-							<img src="img/kindergarden.jpg" alt="">
-						</div>
-					</div>
-				</div>
+			<div class="services-container">
+			    <div class="service">
+			        <img class="service-icon" src="img/services/blocks.svg" alt="">
+			        <h3 class="service-name">Детский сад</h3>
+			        <p class="service-description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. </p>
+			        <a class="button button-white" href="#">Узнать больше</a>
+			    </div>
+			    <div class="service">
+			        <img class="service-icon" src="img/services/boy.svg" alt="">
+			        <h3 class="service-name">Школа</h3>
+			        <p class="service-description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Выйтиповстречался путь. </p>
+			        <a class="button button-white" href="#">Узнать больше</a>
+			    </div>
+			    <div class="service">
+			        <img class="service-icon" src="img/services/parenting.svg" alt="">
+			        <h3 class="service-name">Логопед</h3>
+			        <p class="service-description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Выйти повстречался путь взобравшись. </p>
+			        <a class="button button-white" href="#">Узнать больше</a>
+			    </div>
+			    <div class="service">
+			        <img class="service-icon" src="img/services/children.svg" alt="">
+			        <h3 class="service-name">Психолог</h3>
+			        <p class="service-description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+			        <a class="button button-white" href="#">Узнать больше</a>
+			    </div>
 			</div>
-			
-			<div class="service-container">
-				<div class="service">
-					<h3 class="service-header">Школа для детей от 4 до 7 лет</h3>
-					<div class="service-content">
-						<div class="service-description">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti quo error dignissimos, amet maxime et iste odio, quis nam, reprehenderit accusantium illo optio deleniti voluptates sapiente perferendis iusto rem eos. Lorem ipsum dolor sit amet, consectetur</p>
-							<a class="button button-white service-button" href="#">Узнать больше</a>
-						</div>
-						<div class="service-img">
-							<img src="img/school.jpg" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-			
 		</div>
 	</section>
 	<section class="h-section section-reviews">
@@ -227,7 +225,7 @@
 						<img src="img/news2.jpg" alt="">
 					</div>
 					<h4 class="news-title">Более длинный заголовок новости для тестирования заголовка новости</h4>
-					<p class="news-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis enim nobis, inventore voluptatum repellendus. Provident quod quas assumenda, iure beatae non ratione molestiae architecto libero, pariatur alias blanditiis quasi repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore neque facere obcaecati quibusdam! Nulla at.</p>
+					<p class="news-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis enim nobis, inventore voluptatum repellendus. Provident quod quas assumenda, iure beatae non ratione molestiae architecto libero.</p>
 					<a href="#" class="button button-white news-more">Далее</a>
 				</div>
 				<div class="news">
@@ -239,7 +237,6 @@
 					<a href="#" class="button button-white news-more">Далее</a>
 				</div>
 			</div>
-			<a class="button button-white all-news" href="#">Смотреть все новости</a>
 		</div>
 	</section>
 	<footer class="footer">
@@ -247,11 +244,19 @@
 			<div class="social column">
 				<img class="logo" src="img/logo.png" alt="">
 				<span class="contact">г. Пермь ул. Куйбышева д. 68</span>
-				<span class="contact">(342) 294-07-90</span>
-				<span class="contact">(342) 241-06-16</span>
-				<div class="social-networks">
-					<a href="#">F</a>
-					<a href="#">VK</a>
+				<span class="contact">+7 (342) 294-07-90</span>
+				<span class="contact">+7 (342) 241-06-16</span>
+				<div class="community">
+                    <div class="social-networks">
+                        <h5>Детский сад</h5>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="social-networks">
+                        <h5>Школа</h5>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
 				</div>
 			</div>
 			<div class="main-navigation column">
